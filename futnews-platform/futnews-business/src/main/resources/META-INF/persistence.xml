@@ -1,0 +1,9 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence">
+
+	<persistence-unit name="futnewsPU" transaction-type="RESOURCE_LOCAL">
+		<class>br.com.acfc.futnews.model.Team</class>
+		<class>br.com.acfc.futnews.model.News</class>
+	</persistence-unit>
+</persistence>
