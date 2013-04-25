@@ -55,6 +55,11 @@ public class Team {
 		news = new ArrayList<News>();
 		this.name = name;
 	}
+
+	public Team(Long id) {
+		news = new ArrayList<News>();
+		this.id = id;
+	}
 	
 	/**
 	 * Getter method for id
