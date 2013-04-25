@@ -21,29 +21,12 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.codehaus.enunciate</groupId>
-				<artifactId>maven-enunciate-plugin</artifactId>
-				<configuration>
-					<configFile>enunciate.xml</configFile>
-					<exports>
-						<jaxws.client.library.binaries>client.jar</jaxws.client.library.binaries>
-					</exports>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>assemble</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
 					<debug>false</debug>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>1.7</source>
+					<target>1.7</target>
 				</configuration>
 			</plugin>
 		</plugins>
