@@ -50,6 +50,9 @@ public class NewsService implements INewsService {
 		team.addNews(news);
 		
 		newsDAO.save(news);
+		
+		teamDAO.update(team);
+		
 		logger.debug("News saved: " + news.getId() + " / " + news.getTitle());
 	}
 

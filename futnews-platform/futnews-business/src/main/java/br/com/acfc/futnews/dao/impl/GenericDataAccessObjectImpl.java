@@ -16,8 +16,7 @@ public abstract class GenericDataAccessObjectImpl<T, PK extends Serializable> im
 	protected EntityManager entityManager;
 
 	/**
-	 * (non-Javadoc)
-	 * @see org.indt.cb.phonefinder.dao.impl.IDataAccessObject#save(T)
+	 * {@inheritDoc}
 	 */
 	@Override
 	public void save(T t) {
@@ -25,8 +24,7 @@ public abstract class GenericDataAccessObjectImpl<T, PK extends Serializable> im
 	}
 	
 	/**
-	 * (non-Javadoc)
-	 * @see org.indt.cb.phonefinder.dao.impl.IDataAccessObject#delete(T)
+	 * {@inheritDoc}
 	 */
 	@Override
 	public void delete(T t) {
@@ -34,8 +32,7 @@ public abstract class GenericDataAccessObjectImpl<T, PK extends Serializable> im
 	}
 	
 	/**
-	 * (non-Javadoc)
-	 * @see org.indt.cb.phonefinder.dao.impl.IDataAccessObject#findByPK(T)
+	 * {@inheritDoc}
 	 */
 	@Override
 	public T findByPK(Class<T> clazz, PK pk) {
@@ -43,8 +40,7 @@ public abstract class GenericDataAccessObjectImpl<T, PK extends Serializable> im
 	}
 	
 	/**
-	 * (non-Javadoc)
-	 * @see org.indt.cb.phonefinder.dao.impl.IDataAccessObject#update(T)
+	 * {@inheritDoc}
 	 */
 	@Override
 	public T update(T t) {
